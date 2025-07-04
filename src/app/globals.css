@@ -192,3 +192,16 @@ text-shadow: none;
 .rotate {
   animation: rotate-animation 1s alternate infinite;
 }
+
+.slide-card h2 {
+display: none;
+}
+.slide-arrow {
+  display: none;
+}
+
+.slider-image {
+  position: absolute;
+  top: 20px;
+}
+
