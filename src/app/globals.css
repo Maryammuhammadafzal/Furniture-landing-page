@@ -166,3 +166,29 @@
 color: transparent;
 text-shadow: none;
 }  */
+
+@keyframes spin-animation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.spin {
+  animation: spin-animation 10s linear infinite;
+}
+
+@keyframes rotate-animation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 45deg;
+  }
+}
+
+.rotate {
+  animation: rotate-animation 1s alternate infinite;
+}
