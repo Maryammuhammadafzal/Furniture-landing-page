@@ -6,8 +6,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-afacad);
+  --font-mono: var(--font-aboreto);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -51,7 +51,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
+  --primary: #31554F;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: #FFECD5;
   --secondary-foreground: oklch(0.205 0 0);
@@ -120,3 +120,49 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.overflow-hidden .animate-marquee {
+  animation-play-state: running;
+}
+
+
+.animate-marquee-2 {
+  display: inline-block;
+  animation: marquee-2 15s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes marquee-2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.overflow-hidden .animate-marquee-2 {
+  animation-play-state: running;
+}
+
+/* .bg-clip {
+  background-clip: text;
+color: transparent;
+text-shadow: none;
+}  */

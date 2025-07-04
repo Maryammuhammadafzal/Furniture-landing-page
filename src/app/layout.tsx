@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Afacad, Aboreto } from "next/font/google";
 import "./globals.css";
+import HeroPage from "./hero/page";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const afacad = Afacad({
+  variable: "--font-afacad",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const aboreto = Aboreto({
+  variable: "--font-aboreto",
   subsets: ["latin"],
+  weight : ['400']
 });
 
 export const metadata: Metadata = {
@@ -25,8 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${afacad.variable} ${aboreto.variable} antialiased`}
       >
+        <HeroPage/>
         {children}
       </body>
     </html>
