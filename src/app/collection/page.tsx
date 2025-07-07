@@ -29,17 +29,19 @@ const CollectionPage = () => {
             <h2
               style={{
                 transform: `${
-                  offset > 500 && offset < 600 &&
-                  `translateX(-${300}px)`
+                  offset > 500 && offset < 600 && `translateX(-${300}px)`
                 }`,
-                transition: "transform 0.3s linear", // Smoother 300ms transition
+                transition: "transform 0.3s linear",
               }}
               className="card-heading max-w-lg transition-transform leading-normal font-mono md:text-6xl sm:text-5xl text-4xl text-primary"
             >
               Living Room Furniture
             </h2>
-            <div 
-            className={`${offset > 500 && offset < 600 && 'flex'} hidden relative justify-center items-center rounded-full h-[100px] w-[100px] slide-arrow`}>
+            <div
+              className={`${
+                offset > 500 && offset < 600 && "flex"
+              } hidden relative justify-center items-center rounded-full h-[100px] w-[100px] slide-arrow`}
+            >
               <svg
                 className="absolute inset-0 w-full h-full"
                 preserveAspectRatio="none"
@@ -61,13 +63,17 @@ const CollectionPage = () => {
                 <MoveRightIcon size={42} color="#31554F" />
               </div>
             </div>
-            <div  style={{
+            <div
+              style={{
                 transform: `${
-                  offset > 500 && offset < 600 &&
-                  `translateX(${400}px) translateY(-${100}px)` 
+                  offset > 500 &&
+                  offset < 600 &&
+                  `translateX(${400}px) translateY(-${100}px)`
                 }`,
-                transition: "transform 0.3s linear", // Smoother 300ms transition
-              }} className="slider-image w-[390px] transition-transform h-[435px] flex justify-center items-center rotate-6">
+                transition: "transform 0.3s linear",
+              }}
+              className="slider-image w-[390px] transition-transform h-[435px] flex justify-center items-center rotate-6"
+            >
               <Image
                 src="/images/collection-image1.jpg"
                 alt="colleection-images"
@@ -77,15 +83,26 @@ const CollectionPage = () => {
               />
             </div>
           </div>
-          <div 
-          style={{
+          <div
+            style={{
+              transform: `${
+                offset > 500 && offset < 600 && `translateY(${250}px)`
+              }`,
+              transition: "transform 0.3s linear",
+            }}
+            className="slide-card w-full h-auto flex justify-evenly gap-8 items-center"
+          >
+            <div
+              style={{
                 transform: `${
-                  offset > 500 && offset < 600 &&
-                  `translateY(${250}px)`
+                  offset > 800 &&
+                  offset < 900 &&
+                  `translateX(-${400}px) translateY(-${100}px)`
                 }`,
                 transition: "transform 0.3s linear", // Smoother 300ms transition
-              }} className="slide-card w-full h-auto flex justify-evenly gap-8 items-center">
-            <div className="slider-image w-[390px] h-[435px] flex justify-center items-center -rotate-6">
+              }}
+              className="slider-image w-[390px] h-[435px] flex justify-center items-center -rotate-6"
+            >
               <Image
                 src="/images/collection-image2.jpg"
                 alt="colleection-images"
@@ -94,7 +111,11 @@ const CollectionPage = () => {
                 className="w-full h-full object-cover object-center"
               />
             </div>
-            <div className="flex relative rotate-180 justify-center items-center rounded-full h-[100px] w-[100px] slide-arrow">
+            <div
+              className={` ${
+                offset > 800 && offset < 900 && `flex`
+              } hidden relative rotate-180 justify-center items-center rounded-full h-[100px] w-[100px] slide-arrow`}
+            >
               <svg
                 className="absolute inset-0 w-full h-full"
                 preserveAspectRatio="none"
@@ -116,17 +137,26 @@ const CollectionPage = () => {
                 <MoveRightIcon size={42} color="#31554F" />
               </div>
             </div>
-            <h2 className="card-heading max-w-lg leading-16 font-mono md:text-6xl sm:text-5xl text-4xl text-primary ">
+            <h2  style={{
+                transform: `${
+                  offset > 800 && offset < 900 &&
+                  `translateX(${500}px)`
+                }`,
+                transition: "transform 0.3s linear", // Smoother 300ms transition
+              }} className="card-heading max-w-lg leading-16 font-mono md:text-6xl sm:text-5xl text-4xl text-primary ">
               Bedroom Furniture
             </h2>
           </div>
-          <div  style={{
-                transform: `${
-                  offset > 500 && offset < 600 &&
-                  `translateY(${0}px)`
-                }`,
-                transition: "transform 0.3s linear", // Smoother 300ms transition
-              }} className="slide-card w-full h-auto flex justify-evenly gap-8 items-center">
+          <div
+            style={{
+              transform: `${
+                offset > 500 && offset < 600 && `translateY(-${20}px)` ||
+                offset > 800 && offset < 900 && `translateY(450px)`
+              }`,
+              transition: "transform 0.3s linear",
+            }}
+            className="slide-card w-full h-auto flex justify-evenly gap-8 items-center"
+          >
             <h2 className="card-heading max-w-lg leading-16 font-mono md:text-6xl sm:text-5xl text-4xl text-primary ">
               Dining Room Furniture
             </h2>
@@ -162,13 +192,16 @@ const CollectionPage = () => {
               />
             </div>
           </div>
-          <div  style={{
-                transform: `${
-                  offset > 500 && offset < 600 &&
-                  `translateY(${0}px)`
-                }`,
-                transition: "transform 0.3s linear", // Smoother 300ms transition
-              }} className="slide-card w-full h-auto flex justify-evenly gap-8 items-center">
+          <div
+            style={{
+              transform: `${
+                offset > 500 && offset < 600 && `translateY(-${320}px)` ||
+                offset > 800 && offset < 900 && `translateY(-50px)`
+              }`,
+              transition: "transform 0.3s linear",
+            }}
+            className="slide-card w-full h-auto flex justify-evenly gap-8 items-center"
+          >
             <div className="slider-image w-[390px] h-[435px] flex justify-center items-center -rotate-6">
               <Image
                 src="/images/collection-image4.jpg"
@@ -204,13 +237,16 @@ const CollectionPage = () => {
               Outdoor Furniture
             </h2>
           </div>
-          <div  style={{
-                transform: `${
-                  offset > 500 && offset < 600 &&
-                  `translateY(${0}px)`
-                }`,
-                transition: "transform 0.3s linear", // Smoother 300ms transition
-              }} className="slide-card w-full h-auto flex justify-evenly gap-8 items-center">
+          <div
+            style={{
+              transform: `${
+                offset > 500 && offset < 600 && `translateY(-${600}px)`||
+                offset > 800 && offset < 900 && `translateY(-400px)`
+              }`,
+              transition: "transform 0.3s linear",
+            }}
+            className="slide-card w-full h-auto flex justify-evenly gap-8 items-center"
+          >
             <h2 className="card-heading max-w-lg leading-16 font-mono md:text-6xl sm:text-5xl text-4xl text-primary ">
               Office Furniture
             </h2>
@@ -246,13 +282,17 @@ const CollectionPage = () => {
               />
             </div>
           </div>
-          <div  style={{
-                transform: `${
-                  offset > 500 && offset < 600 &&
-                  `translateY(${0}px)`
-                }`,
-                transition: "transform 0.3s linear", // Smoother 300ms transition
-              }} className="slide-card w-full h-auto flex justify-evenly gap-8 items-center">
+          <div
+            style={{
+              transform: `${
+                offset > 500 && offset < 600 && `translateY(-${900}px)` ||
+                offset > 800 && offset < 900 && `translateY(-640px)`
+                
+              }`,
+              transition: "transform 0.3s linear",
+            }}
+            className="slide-card w-full h-auto flex justify-evenly gap-8 items-center"
+          >
             <div className="slider-image w-[390px] h-[435px] flex justify-center items-center rotate-6">
               <Image
                 src="/images/collection-image6.jpg"

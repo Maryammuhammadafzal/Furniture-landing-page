@@ -196,9 +196,9 @@ text-shadow: none;
 /* .slide-card h2 {
 display: none;
 } */
-/* .slide-arrow {
+.slide-arrow {
   display: none;
-} */
+}
 
 .slider-image {
   position: absolute;
