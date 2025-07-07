@@ -217,7 +217,14 @@ const CollectionPage = () => {
             }}
             className="slide-card w-full h-auto flex justify-evenly gap-8 items-center"
           >
-            <div className="slider-image w-[390px] h-[435px] flex justify-center items-center -rotate-6">
+            <div 
+            style={{
+                transform: `${
+                  offset > 1200 && offset < 1300 &&
+                  `translateX(-${300}px) translateY(-100px)`
+                }`,
+                transition: "transform 0.3s linear", // Smoother 300ms transition
+              }} className="slider-image w-[390px] h-[435px] flex justify-center items-center -rotate-6">
               <Image
                 src="/images/collection-image4.jpg"
                 alt="colleection-images"
@@ -248,7 +255,13 @@ const CollectionPage = () => {
                 <MoveRightIcon size={42} color="#31554F" />
               </div>
             </div>
-            <h2 className="card-heading max-w-lg leading-16 font-mono md:text-6xl sm:text-5xl text-4xl text-primary ">
+            <h2  style={{
+                transform: `${
+                  offset > 1200 && offset < 1300 &&
+                  `translateX(${400}px)`
+                }`,
+                transition: "transform 0.3s linear", // Smoother 300ms transition
+              }} className="card-heading max-w-lg leading-16 font-mono md:text-6xl sm:text-5xl text-4xl text-primary ">
               Outdoor Furniture
             </h2>
           </div>
