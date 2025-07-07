@@ -193,12 +193,12 @@ text-shadow: none;
   animation: rotate-animation 1s alternate infinite;
 }
 
-.slide-card h2 {
+/* .slide-card h2 {
 display: none;
-}
-.slide-arrow {
+} */
+/* .slide-arrow {
   display: none;
-}
+} */
 
 .slider-image {
   position: absolute;
