@@ -24,7 +24,7 @@ const CollectionPage = () => {
       </h2>
 
       <div className="w-full px-6 py-30 h-auto flex justify-center items-center">
-        <div className="relative w-full min-h-[3000px] h-auto flex flex-col gap-40 justify-center items-center">
+        <div className="relative w-full h-[3000px] flex flex-col gap-40 justify-center items-center">
           <div className="slide-card w-full h-auto flex justify-evenly gap-8 items-center">
             <h2
               style={{
@@ -258,7 +258,7 @@ const CollectionPage = () => {
             <h2  style={{
                 transform: `${
                   offset > 1200 && offset < 1300 &&
-                  `translateX(${400}px)`
+                  `translateX(${500}px)`
                 }`,
                 transition: "transform 0.3s linear", // Smoother 300ms transition
               }} className="card-heading max-w-lg leading-16 font-mono md:text-6xl sm:text-5xl text-4xl text-primary ">
@@ -270,7 +270,8 @@ const CollectionPage = () => {
               transform: `${
                 offset > 500 && offset < 600 && `translateY(-${600}px)`||
                 offset > 800 && offset < 900 && `translateY(-60px)` || 
-                offset > 1200 && offset < 1300 && `translateY(490px)`
+                offset > 1200 && offset < 1300 && `translateY(490px)` || 
+                offset > 2500 && offset < 2600 && `translateY(900px)` 
               }`,
               transition: "transform 0.3s linear",
             }}
@@ -316,7 +317,8 @@ const CollectionPage = () => {
               transform: `${
                 offset > 500 && offset < 600 && `translateY(-${900}px)` ||
                 offset > 800 && offset < 900 && `translateY(-350px)`  || 
-                offset > 1200 && offset < 1300 && `translateY(200px)`
+                offset > 1200 && offset < 1300 && `translateY(200px)` || 
+                offset > 2500 && offset < 2600 && `translateY(600px)`
                 
               }`,
               transition: "transform 0.3s linear",
