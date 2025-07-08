@@ -27,7 +27,7 @@ const Footer = () => {
 </div>
 <div className="w-auto h-auto flex gap-3 flex-col">
   <h3 className="text-primary font-mono text-3xl">Social Media</h3>
-  <ul className="grid grid-cols-3 text-primary font-sans text-xl gap-2">
+  <ul className="flex flex-wrap text-primary font-sans text-3xl gap-8 max-w-[200px]">
     <li className=""><FaFacebook/></li>
     <li className=""><FaXTwitter/></li>
     <li className=""><FaLinkedin/></li>
