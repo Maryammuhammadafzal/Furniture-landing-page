@@ -219,7 +219,7 @@ const products = [
     .slice(0, 6);
 
   return (
-    <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full h-auto justify-between gap-10 items-center">
+    <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full h-auto sm:justify-between justify-center gap-6 items-center">
       <div
         className="menu-con w-10 h-10 absolute top-[12%] left-[11%]"
         onClick={() => setIsMenuOpen(!IsMenuOpen)}

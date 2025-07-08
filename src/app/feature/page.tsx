@@ -7,7 +7,7 @@ const FeaturedPage = () => {
       <h2 className="max-w-4xl font-mono md:text-6xl sm:text-5xl text-4xl text-primary text-center">
         Our Featured Products
       </h2>
-      <div className="lg:w-[85%] w-full px-6 py-20 h-auto flex justify-center items-center">
+      <div className="xl:w-[90%] w-full px-3 py-20 h-auto flex justify-center items-center">
         <FeaturedProduct/>
       </div>
     </div>
