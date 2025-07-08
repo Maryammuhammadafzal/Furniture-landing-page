@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="p-3 flex justify-center items-center w-full h-full">
       <div className="w-[90%] h-full flex justify-center items-center flex-col gap-6">
-        <div className="py-10 flex justify-start 2xl:gap-28 xl:gap-20 lg:gap-14 md:gap-7 gap-4 w-full h-auto items-center">
+        <div className="py-10 flex justify-start 2xl:gap-28 xl:gap-20 lg:gap-14 md:gap-7 gap-4 w-full h-auto items-start">
 <div className="w-auto h-auto flex gap-3 flex-col">
   <h3 className="text-primary font-mono text-3xl">Quick Links</h3>
   <ul className="flex flex-col text-primary font-sans text-xl gap-2">

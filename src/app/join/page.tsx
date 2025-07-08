@@ -5,8 +5,8 @@ const JoinPage = () => {
   return (
     <div className="w-full h-auto md:py-20 sm:py-10 py-5 flex justify-center items-center">
       <div className="lg:w-[90%] w-full h-full px-3 lg:px-0 flex gap-10 md:flex-row flex-col justify-between items-center">
-        <div className="md:w-[60%] w-[90%] flex h-full justify-center flex-col gap-5">
-          <h2 className=" font-mono text-5xl sm:text-6xl lg:text-6xl  md:text-5xl text-primary">
+        <div className="2xl:w-[60%] xl:w-[75%] lg:w-[90%] w-[90%] flex h-full justify-center flex-col gap-5">
+          <h2 className=" font-mono text-5xl sm:text-5xl lg:text-5xl xl:text-6xl  md:text-4xl text-primary">
             Join Our Community
           </h2>
           <p className="xl:text-2xl lg:text-xl text-primary text-lg font-sans">
