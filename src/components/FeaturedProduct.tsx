@@ -221,7 +221,7 @@ const products = [
   return (
     <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-full h-auto sm:justify-between justify-center gap-6 items-center">
       <div
-        className="menu-con w-10 h-10 absolute top-[12%] left-[11%]"
+        className="menu-con w-10 h-10 absolute md:top-[12%] sm:top-[10%] top-[5%] left-[11%]"
         onClick={() => setIsMenuOpen(!IsMenuOpen)}
       >
         <Image src="/images/menu-icon.png" alt="icon" width={35} height={14} />
@@ -261,7 +261,7 @@ const products = [
 
       {filteredProducts &&
         filteredProducts.map((product, index) => (
-          <Card key={index} className="w-[380px] border-none p-0 shadow-none h-[480px] flex justify-center items-center">
+          <Card key={index} className="xs:w-[380px] w-full border-none p-0 shadow-none h-[480px] flex justify-center items-center">
             <CardContent className="flex flex-col h-full justify-between gap-4">
               <div className="h-auto  w-auto flex min-h-[350px]  max-h-[400px] max-w-[370px] justify-center items-end">
                 <Image
