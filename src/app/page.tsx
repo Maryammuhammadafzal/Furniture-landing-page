@@ -2,6 +2,7 @@ import Image from "next/image";
 import CollectionPage from "./collection/page";
 import StoryPage from "./story/page";
 import FeaturedPage from "./feature/page";
+import TestimonialPage from "./testimonial/page";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
     <CollectionPage/>
     <StoryPage/>
     <FeaturedPage/>
+    <TestimonialPage/>
    </div>
   );
 }
