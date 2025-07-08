@@ -3,6 +3,7 @@ import CollectionPage from "./collection/page";
 import StoryPage from "./story/page";
 import FeaturedPage from "./feature/page";
 import TestimonialPage from "./testimonial/page";
+import ContactPage from "./contact/page";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <StoryPage/>
     <FeaturedPage/>
     <TestimonialPage/>
+    <ContactPage/>
    </div>
   );
 }

@@ -1,3 +1,4 @@
+import MapPicture from "@/components/MapPicture";
 import StoryPictures from "@/components/StoryPictures";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
@@ -23,14 +24,14 @@ const ContactPage = () => {
           <p className="xl:text-2xl lg:text-xl text-lg max-w-xl font-sans">
            Explore our showroom at [Store Location(s)] or shop online for a seamless experience.
           </p>
-          <div className="py-2 flex flex-col gap-2">
-            <p><span className="font-medium text-primary text-3xl font-sans flex items-center">Email:</span><span> support@[YourDomain].com</span></p>
-            <p><span className="font-medium text-primary text-3xl font-sans flex items-center">Phone:</span><span> +[Your Phone Number]</span></p>
-            <p><span className="font-medium text-primary text-3xl font-sans flex items-center">Email:</span><span> support@[YourDomain].com</span></p>
+          <div className="py-2 flex flex-col gap-4">
+            <p className="text-primary text-3xl font-sans flex items-center gap-1"><span className="font-medium ">Email:</span><span className="text-2xl"> support@[YourDomain].com</span></p>
+            <p className="text-primary text-3xl font-sans flex items-center gap-1"><span className="font-medium ">Phone:</span><span className="text-2xl"> +[Your Phone Number]</span></p>
+            <p className="text-primary text-3xl font-sans flex items-center gap-1"><span className="font-medium ">Address:</span><span className="text-2xl"> [Your Address]</span></p>
           </div>
         </div>
         <div className="md:w-[50%] w-[90%] h-auto p-3 flex justify-center items-center">
-         <StoryPictures/>
+         <MapPicture/>
         </div>
       </div>
     </div>
