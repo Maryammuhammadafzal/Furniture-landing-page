@@ -6,7 +6,7 @@ import Image from "next/image";
 const ContactPage = () => {
    
   return (
-    <div className="w-full h-auto min-h-[550px] relative bg-[#FFECD5] flex justify-center items-center">
+    <div className="w-full h-auto py-10 relative bg-[#FFECD5] flex justify-center items-center">
       <div className="w-[80px] h-[80px] absolute lg:top-[23%] md:top-[24%] flex justify-center items-center lg:left-[31%] xl:left-[28%]  md:left-[36%] 2xl:left-[25%]">
         <Image
           src="/images/star-4.png"
@@ -16,8 +16,8 @@ const ContactPage = () => {
           className="rotate"
         />
       </div>
-      <div className="lg:w-[90%] w-full px-3 lg:px-0 flex gap-10 md:flex-row flex-col justify-between items-center md:py-20 py-14">
-        <div className="md:w-[50%] w-[90%] flex h-auto flex-col gap-5">
+      <div className="lg:w-[90%] w-full px-3 lg:px-0 flex gap-10 md:flex-row flex-col justify-between items-start">
+        <div className="md:w-[50%] w-[90%] flex h-full justify-center flex-col gap-5">
           <h2 className="max-w-4xl font-mono text-5xl sm:text-6xl lg:text-5xl  md:text-5xl text-primary">
             Visit Us
           </h2>
@@ -30,7 +30,7 @@ const ContactPage = () => {
             <p className="text-primary text-3xl font-sans flex items-center gap-1"><span className="font-medium ">Address:</span><span className="text-2xl"> [Your Address]</span></p>
           </div>
         </div>
-        <div className="md:w-[50%] w-[90%] h-auto p-3 flex justify-center items-center">
+        <div className="md:w-[50%] w-[90%] h-auto  flex justify-center items-center">
          <MapPicture/>
         </div>
       </div>

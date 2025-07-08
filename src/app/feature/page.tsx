@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 
 const FeaturedPage = () => {
+
   return (
      <div className="w-full relative h-auto md:py-20 sm:py-20 py-10 flex flex-col justify-center items-center">
       <div className='flex flex-col gap-2 w-auto items-center'>

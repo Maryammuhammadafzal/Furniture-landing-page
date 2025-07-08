@@ -33,7 +33,7 @@ const TestimonialCard = () => {
   ];
 
   return (
-    <div className="w-full h-auto flex flex-wrap justify-center items-center gap-8">
+    <div className="w-full h-auto flex flex-wrap justify-center px-6  items-center gap-8">
       {testimonial &&
         testimonial.map((testimonial , index) => (
           <Card key={index} className="w-[310px] h-[340px] flex justify-center items-center relative p-0 shadow-none border-none">

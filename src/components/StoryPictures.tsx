@@ -8,12 +8,10 @@ const StoryPictures = () => {
   useEffect(() => {
     const handleScroll = () => {
       setOffset(window.scrollY);
-      console.log(offset);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  console.log(offset);
   return (
     <div className="relative w-full flex justify-center  items-center h-[500px]">
       <div

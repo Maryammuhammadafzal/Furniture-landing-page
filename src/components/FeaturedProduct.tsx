@@ -1,11 +1,17 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "./ui/card";
 import Image from "next/image";
-
-
+import Aos from "aos"
+import 'aos/dist/aos.css'
 
 const FeaturedProduct = () => {
+    useEffect(()=> {
+    Aos.init({
+      duration : 1000,
+      once : true
+    })
+  })
   const [IsMenuOpen, setIsMenuOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState("chair");
 
@@ -261,7 +267,7 @@ const products = [
         filteredProducts.map((product, index) => (
           <Card key={index} className="xs:w-[380px] w-full border-none p-0 shadow-none h-[480px] flex justify-center items-center">
             <CardContent className="flex flex-col h-full justify-between gap-4">
-              <div className="h-auto  w-auto flex min-h-[350px]  max-h-[400px] max-w-[370px] justify-center items-end">
+              <div data-aos="zoom-in" className="h-auto  w-auto flex min-h-[350px]  max-h-[400px] max-w-[370px] justify-center items-end">
                 <Image
                   src={product.image}
                   alt={product.category}
