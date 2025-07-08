@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Afacad, Aboreto } from "next/font/google";
 import "./globals.css";
 import HeroPage from "./hero/page";
+import JoinPage from "./join/page";
+import Footer from "@/components/Footer";
 
 const afacad = Afacad({
   variable: "--font-afacad",
@@ -31,6 +33,8 @@ export default function RootLayout({
       >
         <HeroPage/>
         {children}
+        <JoinPage/>
+        <Footer/>
       </body>
     </html>
   );

@@ -1,5 +1,6 @@
-import { Facebook, Instagram, Linkedin, Twitter, TwitterIcon, X } from "lucide-react";
 import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -27,11 +28,11 @@ const Footer = () => {
 <div className="w-auto h-auto flex gap-3 flex-col">
   <h3 className="text-primary font-mono text-3xl">Social Media</h3>
   <ul className="grid grid-cols-3 text-primary font-sans text-xl gap-2">
-    <li className=""><Facebook/></li>
-    <li className=""><Twitter/></li>
-    <li className=""><Linkedin/></li>
-    <li className=""><Instagram/></li>
-    <li className=""></li>
+    <li className=""><FaFacebook/></li>
+    <li className=""><FaXTwitter/></li>
+    <li className=""><FaLinkedin/></li>
+    <li className=""><FaInstagram/></li>
+    <li className=""><FaWhatsapp/></li>
   </ul>
 </div>
         </div>
