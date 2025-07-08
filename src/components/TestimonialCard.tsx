@@ -35,10 +35,10 @@ const TestimonialCard = () => {
   return (
     <div className="w-full h-auto flex flex-wrap justify-center items-center gap-8">
       {testimonial &&
-        testimonial.map((testimonial) => (
-          <Card className="w-[310px] h-[340px] flex justify-center items-center relative p-0 shadow-none border-none">
+        testimonial.map((testimonial , index) => (
+          <Card key={index} className="w-[310px] h-[340px] flex justify-center items-center relative p-0 shadow-none border-none">
               <div className="w-full h-[260px] z-10 flex justify-center items-center bg-primary-foreground absolute bottom-0 left-0"></div>
-            <CardContent className="w-full h-full flex flex-col justify-center absolute top-0 left-0 z-20 items-center px-4 gap-4">
+            <CardContent className="w-full h-full flex flex-col justify-center absolute top-0 left-0 z-20 items-center xs:px-4 px-1 gap-4">
               <div className="w-[103px] h-[103px] flex justify-center items-center">
                 <Image
                   src={testimonial.image}
@@ -48,7 +48,7 @@ const TestimonialCard = () => {
                   className="w-full h-full rounded-full object-cover"
                 />
               </div>
-              <p className="text-lg font-sans text-center leading-6 text-primary">
+              <p className="xs:text-lg sm:text-base text-sm font-sans text-center leading-6 text-primary">
                 {`${testimonial.description}`}
               </p>
               <div className="py-1">
