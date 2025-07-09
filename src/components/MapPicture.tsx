@@ -24,7 +24,7 @@ const MapPicture = () => {
         style={{
           transform: `${offset > 7200 && offset < 7300 && `rotate(-5deg)`}`,
           transition: "transform 0.3s linear",
-        }} className="rounded-2xl relative w-[440px] transition-transform h-[435px] flex justify-center items-center ">
+        }} className="rounded-2xl relative sm:w-[440px] xs:w-[90%] w-[97%] transition-transform h-[435px] flex justify-center items-center ">
           <Image
             src="/images/map-image.png"
             alt="colleection-images"
@@ -32,7 +32,7 @@ const MapPicture = () => {
             height={435}
             className="w-full h-full rounded-2xl object-cover object-center"
           />
-        <div className="content bg-white rounded-br-2xl rounded-bl-2xl absolute bottom-0 w-[440px] transition-transform h-[100px] flex justify-center items-center ">
+        <div className="content bg-white rounded-br-2xl rounded-bl-2xl absolute bottom-0 sm:w-[440px] w-full transition-transform h-[100px] flex justify-center items-center ">
           <div className="w-full h-full flex-col gap-3 flex justify-center items-center">
             <p className="text-xl text-primary text-center">
               2464 Royal Ln. Mesa, New Jersey 45463

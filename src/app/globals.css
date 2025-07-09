@@ -121,6 +121,9 @@
   }
 }
 
+@theme {
+  --breakpoint-xs: 30rem;
+}
 
 .animate-marquee {
   display: inline-block;

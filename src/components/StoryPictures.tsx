@@ -19,7 +19,7 @@ const StoryPictures = () => {
           transform: `${offset > 3800 && offset < 3900 && `rotate(-5deg)`}`,
           transition: "transform 0.3s linear",
         }}
-        className="slider-image absolute top-0 w-[390px] transition-transform h-[435px] flex justify-center items-center "
+        className="slider-image absolute top-0 xs:w-[390px] w-[95%] transition-transform xs:h-[435px] h-auto flex justify-center items-center "
       >
         <Image
           src="/images/story-image.jpg"
@@ -34,7 +34,7 @@ const StoryPictures = () => {
           transform: `${offset > 3800 && offset < 3900 && `rotate(5deg)`}`,
           transition: "transform 0.3s linear",
         }}
-        className="slider-image absolute top-0 w-[390px] transition-transform h-[435px] flex justify-center items-center "
+        className="slider-image absolute top-0 xs:w-[390px] w-[95%] transition-transform xs:h-[435px] h-auto flex justify-center items-center "
       >
         <Image
           src="/images/story-image.jpg"

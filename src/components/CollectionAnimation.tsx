@@ -22,7 +22,7 @@ const CollectionAnimation = () => {
                   `translateY(${10}px)`
                 }`,
                 transition: "transform 0.3s linear", 
-              }} className="slide-card h-auto xl:w-full xl:bg-amber-700 flex justify-evenly gap-8 items-center">
+              }} className="slide-card h-auto xl:w-full flex justify-evenly gap-8 items-center">
             <h2
               style={{
                 transform: `${

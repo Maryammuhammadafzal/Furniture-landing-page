@@ -5,8 +5,8 @@ import Image from "next/image";
 const StoryPage = () => {
    
   return (
-    <div className="w-full h-auto min-h-[550px] relative bg-[#FFECD5] flex justify-center items-center">
-      <div className="w-[80px] h-[80px] absolute lg:top-[23%] md:top-[24%] flex justify-center items-center lg:left-[31%] xl:left-[28%]  md:left-[36%] 2xl:left-[25%]">
+    <div className="w-full h-auto xs:min-h-[550px] relative bg-[#FFECD5] flex justify-center items-center">
+      <div className="w-[80px] h-[80px] absolute lg:top-[23%] md:top-[24%] xs:flex hidden justify-center items-center lg:left-[31%] xl:left-[28%]  md:left-[36%] 2xl:left-[25%]">
         <Image
           src="/images/star-4.png"
           alt="star-image"
@@ -15,7 +15,7 @@ const StoryPage = () => {
           className="rotate"
         />
       </div>
-      <div className="lg:w-[90%] w-full px-3 lg:px-0 flex gap-10 md:flex-row flex-col justify-between items-center md:py-20 py-14">
+      <div className="lg:w-[90%] w-full px-3 lg:px-0 flex gap-10 md:flex-row flex-col justify-between items-center lg:py-20 md:py-14 py-7">
         <div className="md:w-[50%] w-[90%] flex h-auto flex-col gap-5">
           <h2 className="max-w-4xl font-mono text-5xl sm:text-6xl lg:text-5xl  md:text-5xl text-primary">
             Our Story
